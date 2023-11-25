@@ -1,0 +1,157 @@
+<!--
+ * Student Name: Bianca Rocha Rodrigues Bringel
+ * Student ID: 041086978
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: Fall 2022
+ * Assignment: Online Store – Part 4
+ * Date Submitted: December 11, 2022
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Online Store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta description="Expanding my first web page" />
+    <meta author="Bianca Bringel" />
+
+    <title>Like a Girl Beachwear</title>
+
+    <link rel="stylesheet" href="assets/main.css" />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/40f896efd3.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="assets/jquery-3.6.1.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="skip-link" href="#products">Skip to content</a>
+
+      <!-- Beginning of Navigation Bar-->
+
+      <nav>
+        <section class="nav-wrap">
+          <div class="nav-item-wrap">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="products.htm">Products </a>
+            <a class="nav-item" href="account.htm">Account</a>
+          </div>
+
+          <div class="nav-item-wrap">
+            <img class="logo" src="images/logo 2.jpg" alt="logo" />
+          </div>
+
+          <div class="nav-item-wrap">
+            <form action="form/submit" method="GET">
+              <input type="text" name="text" class="search" placeholder="Search Here"/>
+              <input class="search-button" type="submit" name="submit" class="submit" value="Search"/>
+            </form>
+            
+            <a class="nav-item" href="contact-us.htm">Contact Us</a>
+            <a class="nav-item" href="cart.htm">Cart</a>
+          </div>
+        </section>
+
+        <section class="nav-product-wrap">
+          <a class="nav-item" href="index.html">NEW</a>
+          <a class="nav-item" href="index.html">CLOTHING</a>
+          <a class="nav-item" href="index.html">BIKINIS</a>
+          <a class="nav-item" href="index.html">COVER UPS</a>
+          <a class="nav-item" href="index.html">SALE</a>
+        </section>
+      </nav>
+
+      <!-- End of Navigation Bar-->
+    </header>
+
+    <main class="contact-us-main">
+      <div class="contact-us-container">
+        <div class="contact-box">
+          <form method="post">
+            <h2>Contact Us</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" class="field" required />
+
+            <label for="myform_phone">Phone Number:</label>
+            <input type="tel" class="field" id="myform_phone" name="phone" pattern="[0-9]{10}" placeholder="Please enter 10-digit number" required />
+
+            <!--
+            Source: https://www.abstractapi.com/guides/validate-email-address-jquery
+            Author: Ankit Goyal
+            Date retrieved: December 10, 2022
+            -->
+            <label for="email">Email:</label>
+            <input type="text" class="field" name="email_valid_input" id="inputemail" placeholder="Please enter your email" required />
+
+            <label for="text">Your Message Here:</label>
+            <textarea placeholder="Message" class="field"></textarea>
+
+            <div onload="disableSubmit()">
+              <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"/>I Agree to <a href="privacy-and-terms.htm">Terms & Conditions</a>
+              <br />
+              <input class="btn" type="submit" name="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="footer-container">
+          <h4 class="footer-container-title">Become an Insider</h4>
+          <p class="footer-container-text">
+            Be the first to know about new products, exclusive offers, and
+            receive 15% off of your first purchase!
+          </p>
+          <form>
+            <input type="text" name="Name" size="30" placeholder="Your Email" />
+          </form>
+          <a href="#" class="btn"> Subscribe Now </a>
+        </div>
+
+        <div class="footer-container">
+          <h4 class="footer-container-title">About</h4>
+          <p><a href="about-us.htm">Our Story</a></p>
+          <p>
+            <a href="https://www.blog.ca/uselikeagirl/" target="_blank">Blog</a>
+          </p>
+          <p><a href="">Press</a></p>
+          <p><a href="">Careers</a></p>
+        </div>
+
+        <div class="footer-container">
+          <h4>Customer Service</h4>
+          <p><a href="">My Account</a></p>
+          <p><a href="">Shipping and Returns</a></p>
+          <p><a href="">Submit a Return</a></p>
+          <p><a href="privacy-and-terms.htm">Privacy Policy & Terms</a></p>
+          <p><a href="">FAQ</a></p>
+          <p><a href="contact-us.htm">Contact Us</a></p>
+        </div>
+
+        <div class="footer-container">
+          <h4>Store Locator</h4>
+          <p><a href="">Retail Stores</a></p>
+          <p><a href="">Our Stores</a></p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="social">
+          <i class="social-icon fab fa-facebook-f"></i>
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-instagram"></i>
+          <i class="social-icon fas fa-envelope"></i>
+        </div>
+      </div>
+
+      <p>Copyright 2022&copy Like a Girl Beachwear</p>
+    </footer>
+  </body>
+</html>

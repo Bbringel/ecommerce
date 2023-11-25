@@ -1,0 +1,215 @@
+<!--
+  -- Student Name: Bianca Rocha Rodrigues Bringel
+  -- Student ID: 041086978
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: Fall 2022
+  -- Assignment: Online Store – Part 4
+  -- Date Submitted: December 11, 2022
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Online Store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta description="Expanding my first web page" />
+    <meta author="Bianca Bringel" />
+
+    <title>Like a Girl Beachwear</title>
+
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css" />
+
+    <script
+      src="https://kit.fontawesome.com/40f896efd3.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <a class="skip-link" href="#products">Skip to content</a>
+
+      <!-- Beginning of Navigation Bar-->
+
+      <nav>
+        <section class="nav-wrap">
+          <div class="nav-item-wrap">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="products.htm">Products </a>
+            <a class="nav-item" href="account.htm">Account</a>
+          </div>
+
+          <div class="nav-item-wrap">
+            <img class="logo" src="images/logo 2.jpg" alt="logo" />
+          </div>
+
+          <div class="nav-item-wrap">
+            <form action="form/submit" method="GET">
+              <input type="text" name="text" class="search" placeholder="Search Here"/>
+              <input class="search-button" type="submit" name="submit" class="submit" value="Search"/>
+            </form>
+            <a class="nav-item" href="contact-us.htm">Contact Us</a>
+            <a class="nav-item" href="cart.htm">Cart</a>
+          </div>
+        </section>
+
+        <section class="nav-product-wrap">
+          <a class="nav-item" href="index.htm">NEW</a>
+          <a class="nav-item" href="index.htm">CLOTHING</a>
+          <a class="nav-item" href="index.htm">BIKINIS</a>
+          <a class="nav-item" href="index.htm">COVER UPS</a>
+          <a class="nav-item" href="index.htm">SALE</a>
+        </section>
+      </nav>
+
+      <!-- End of Navigation Bar-->
+    </header>
+
+  <!-- Placeholder for Sorting prices -->
+
+     <select class="price-sorting-box" name="price-sorting">
+      <option>Relevance</option>  
+      <option value="l2h">Price: Low - High</option>  
+      <option value="h2l">Price: High - Low</option>
+    </select>
+
+
+<!-- Placeholder for filtering prices-->
+
+<div class="filter-container">
+      <div class="filter-card">
+        <h3 class="filter-title">Filter by</h3>
+        <h4>Price:</h4>
+        <div class="filter-card-body">
+          <form id="price-range-form">
+            <label for="min-price" class="form-label">Min price: </label>
+            <span id="min-price-txt">$0</span>
+            <input type="range" class="form-range" min="0" max="100" id="min-price" step="1" value="0">
+            <label for="max-price" class="form-label">Max price: </label>
+            <span id="max-price-txt">$200</span>
+            <input type="range" class="form-range" min="101" max="200" id="max-price" step="1" value="100">
+          </form>
+        </div>
+      </div>
+</div>
+
+  <!--Beginning of Products Section-->
+      <section class="product-featured">
+        
+        <div class="product-featured-box">
+          <div class="product-box">
+            <h3>White Bikini</h3>
+            <img class="product-item" src="images/bikini_white.jpg" alt="Bikini White"/>
+            <p class="price">$72.50 CAD</p>
+            <a href="product.htm">See More</a>
+          </div>
+
+          <div class="product-box">
+            <h3>Orange Bikini</h3>
+            <img class="product-item" src="images/bikini_orange.jpg" alt="Bikini Orange"/>
+            <p class="price">$85.00 CAD</p>
+            <a href="product.htm">See More</a>
+          </div>
+
+          <div class="product-box">
+            <h3>Palm Tree Bikini</h3>
+            <img class="product-item" src="images/bikini_palm_tree.jpg" alt="Bikini Palm-Tree"/>
+            <p class="price">$65.50 CAD</p>
+            <a href="product.htm">See More</a>
+          </div>
+        </div>
+
+          <div class="product-featured-box">
+            <div class="product-box">
+              <h3>Black Bikini</h3>
+              <img class="product-item" src="images/bikini_black.jpg" alt="Bikini Black"/>
+              <p class="price">$50 CAD</p>
+              <a href="product.htm">See More</a>
+            </div>
+  
+            <div class="product-box">
+              <h3>Palm One-Piece</h3>
+              <img class="product-item" src="images/palm-one-piece.jpg" alt="One-Piece Palm-Tree"/>
+              <p class="price">$92.50 CAD</p>
+              <a href="product.htm">See More</a>
+            </div>
+  
+            <div class="product-box">
+              <h3>Checked Bikini</h3>
+              <img class="product-item" src="images/bikini_black&white.jpg" alt="Bikini Black&White"/>
+              <p class="price">$62.50 CAD</p>
+              <a href="product.htm">See More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of Products Section-->
+
+      <!--Paging Placeholder -->
+      <div class="paging-ph">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">Next</a>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="footer-container">
+          <h4 class="footer-container-title">Become an Insider</h4>
+          <p class="footer-container-text">
+            Be the first to know about new products, exclusive offers, and
+            receive 15% off of your first purchase!
+          </p>
+          <form>
+            <input type="text" name="Name" size="30" placeholder="Your Email" />
+          </form>
+          <a href="#" class="btn"> Subscribe Now </a>
+        </div>
+
+        <div class="footer-container">
+          <h4 class="footer-container-title">About</h4>
+          <p><a href="about-us.htm">Our Story</a></p>
+          <p>
+            <a href="https://www.blog.ca/uselikeagirl/" target="_blank">Blog</a>
+          </p>
+          <p><a href="">Press</a></p>
+          <p><a href="">Careers</a></p>
+        </div>
+
+        <div class="footer-container">
+          <h4>Customer Service</h4>
+          <p><a href="">My Account</a></p>
+          <p><a href="">Shipping and Returns</a></p>
+          <p><a href="">Submit a Return</a></p>
+          <p><a href="privacy-and-terms.htm">Privacy Policy & Terms</a></p>
+          <p><a href="">FAQ</a></p>
+          <p><a href="contact-us.htm">Contact Us</a></p>
+        </div>
+
+        <div class="footer-container">
+          <h4>Store Locator</h4>
+          <p><a href="">Retail Stores</a></p>
+          <p><a href="">Our Stores</a></p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="social">     
+          <i class="social-icon fab fa-facebook-f"></i>
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-instagram"></i>
+          <i class="social-icon fas fa-envelope"></i>
+        </div>
+      </div>
+
+      <p>Copyright 2022&copy Like a Girl Beachwear</p>
+      
+    </footer>
+  </body>
+</html>
+

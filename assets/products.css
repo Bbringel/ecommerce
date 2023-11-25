@@ -1,0 +1,221 @@
+/*
+ * Student Name: Bianca Rocha Rodrigues Bringel
+ * Student ID: 041086978
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: Fall 2022
+ * Assignment: Online Store – Part 4
+ * Date Submitted: December 11, 2022
+ */
+
+
+.price-sorting-box {
+  margin-top: 2em;
+  margin-left: 10em;
+}
+
+.product-box .price {
+  background: #b709f6;
+  color: #fff;
+  border-radius: .5rem;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+ 
+.product-featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-featured h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-featured-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.product-item{
+  max-width: 50%;
+	height: auto; 
+  border: 5px solid #f60948;
+}
+
+footer{
+  background-color: #FFC7C7;
+  color: #8785A2;
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+.footer-container{
+  position: relative;
+  overflow: hidden;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFC7C7;
+}
+
+/*Paging Placeholder*/
+.paging-ph {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  margin-right: 2em;
+}
+
+.paging-ph a {
+  padding: 1em 0.5em;
+  color: #6C4AB6;
+  text-decoration: none;
+}
+
+.paging-ph a:hover {
+  color: #9d78ee;
+}
+
+.footer-container-text {
+  font-family: 'Red Hat Display', sans-serif;
+  color: ##F6F6F6;
+  padding: 10px;
+}
+
+.social-icon {
+  color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fa4e7c;
+  color: #F6F6F6;
+}
+
+/* Product Page Styles*/
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-color {
+  color: #0093c4;
+}
+
+/* Main image - left */
+.main-img img {
+  width: 100%;
+}
+
+.main-description .category {
+  text-transform: uppercase;
+  color: #0093c4;
+}
+
+.main-description .product-title {
+  font-size: 2.5rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.buttons .block {
+  margin-right: 5px;
+}
+
+.quantity input {
+  border-radius: 0;
+  height: 40px;
+}
+
+.custom-btn {
+  text-transform: capitalize;
+  background-color: #0093c4;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.custom-btn:hover {
+  background-color: #0093c4;
+  font-size: 18px;
+  color: white;
+}
+
+.similar-product img {
+  height: 400px;
+}
+
+.similar-product {
+  text-align: left;
+}
+
+.similar-product .title {
+  margin: 17px 0px 4px 0px;
+}
+
+.similar-product .price {
+  font-weight: bold;
+}
+
+.questions .icon i {
+  font-size: 2rem;
+}
+
+.questions-icon {
+  font-size: 2rem;
+  color: #0093c4;
+}
+
+/* Mobile size */
+
+@media (max-width: 767.98px) {
+
+  .previews img {
+      width: 100%;
+      height: auto;
+  }
+
+}
+
